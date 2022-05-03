@@ -1,0 +1,12 @@
+B
+John
+B
+Dwayne
+V
+Lisa
+B
+Michael
+B
+Sarah
+V
+Kurt

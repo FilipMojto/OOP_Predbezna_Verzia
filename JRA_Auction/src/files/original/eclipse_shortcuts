@@ -1,0 +1,24 @@
+***ECLIPSE SHORTCUTS***
+	- sysout + ctrl + space = System.out.println("")
+	- main + ctrl + space = main methods
+	- for + ctrl + space = for loop
+	- foreach + ctrl + space = for-each loop
+	- while + ctrl + space = while loop
+	- do + ctrl + space = do-while loop
+	- alt + shift + S + O = custom constructor
+	- alt + shift + R = mark all occurrences
+	ctrl + L = go to a specific line
+	ctrl + O = method overview
+	alt + shift + M = convert the marked part of the text into a method
+	ctrl + D = delete the entire row
+	ctrl + alt + H = view call hierarchy of a method
+	f4 = class hierarchy
+	ctrl + shift + p = jump to beginning/ending of {}, (), []
+	ctrl + '+' = increase the font size
+	ctrol + - = decrease the font size
+	f3 = move to the marked method's/variable's implementation
+	ctrl + shift + R = open resource
+	ctrl + pageup = to spin left through open implementations
+	ctrl + pagedown = to spin right through open implementations
+	alt + left arrow, alt + right arrow = Jump backward or forward in history
+	ctrl f11 = run the program

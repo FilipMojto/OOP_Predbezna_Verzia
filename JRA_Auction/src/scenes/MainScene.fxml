@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphical_interface.MainSceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4baba" height="194.0" layoutX="189.0" layoutY="100.0" opacity="0.16" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Button fx:id="but1" alignment="CENTER" layoutX="196.0" layoutY="146.0" mnemonicParsing="false" mouseTransparent="true" opacity="0.5" prefHeight="36.0" prefWidth="186.0" text="AUCTION">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+      <Button layoutX="196.0" layoutY="182.0" mnemonicParsing="false" onAction="#setStorage" prefHeight="36.0" prefWidth="186.0" text="STORAGE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font></Button>
+      <Button fx:id="exitButton" layoutX="196.0" layoutY="250.0" mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="186.0" text="EXIT">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font></Button>
+      <Button layoutX="196.0" layoutY="214.0" mnemonicParsing="false" onAction="#setBidders" prefHeight="36.0" prefWidth="186.0" text="BIDDERS">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font></Button>
+      <Label fx:id="loadingBar" layoutX="196.0" layoutY="105.0" prefHeight="36.0" prefWidth="186.0" text="        MAIN MENU">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField layoutX="40.0" layoutY="46.0" prefHeight="26.0" prefWidth="240.0" text="Necessary data wasn't loaded successfuly!">
+         <effect>
+            <ColorInput paint="#df1a1a" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </TextField>
+   </children>
+</AnchorPane>
