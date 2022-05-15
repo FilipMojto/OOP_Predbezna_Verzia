@@ -1,4 +1,4 @@
-package error;
+package error_package;
 
 public class FileError {
 	public static final String MISSING_FILE_ERROR = "The file cannot be found!";

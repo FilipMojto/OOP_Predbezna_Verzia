@@ -4,9 +4,8 @@ public abstract class GraphicCard extends Component {
 	
 	private static final long serialVersionUID = 1L;
 
-	public GraphicCard(String manufacturer, int price) {
-		super(manufacturer, price);
-		
+	public GraphicCard(String manufacturer, String name, int price) {
+		super(manufacturer, name, price);
 	}
 
 }

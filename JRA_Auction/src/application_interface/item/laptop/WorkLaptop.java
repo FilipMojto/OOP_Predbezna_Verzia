@@ -4,8 +4,8 @@ public class WorkLaptop extends Laptop {
 	
 	private static final long serialVersionUID = 1L;
 
-	public WorkLaptop(String manufacturer, int price) {
-		super(manufacturer, price);
+	public WorkLaptop(String manufacturer, String name, int price) {
+		super(manufacturer, name, price);
 		
 		super.setType("W");
 	}

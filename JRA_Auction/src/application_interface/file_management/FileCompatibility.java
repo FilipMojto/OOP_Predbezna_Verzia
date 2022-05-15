@@ -1,10 +1,10 @@
-package application_interface;
+package application_interface.file_management;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InvalidObjectException;
 
-import error.FileError;
+import error_package.FileError;
 
 public class FileCompatibility {
 	private File file;

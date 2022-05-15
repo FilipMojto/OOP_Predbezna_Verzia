@@ -1,6 +1,6 @@
 package application_interface.item.component;
 
-import application_interface.Item;
+import application_interface.main_package.Item;
 import other.StringExtension;
 
 public abstract class Component extends Item {
@@ -19,8 +19,8 @@ public abstract class Component extends Item {
 		this.type = this.str.getStringExp();
 	}
 	
-	public Component(String manufacturer, int price) {
-		super(manufacturer, price);
+	public Component(String manufacturer, String name, int price) {
+		super(manufacturer, name, price);
 		
 		this.str = new StringExtension(null);
 		this.type = "C";

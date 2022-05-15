@@ -1,4 +1,4 @@
-package application_interface;
+package application_interface.file_management;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -24,9 +24,12 @@ public class ObjectOutput extends FileCompatibility implements MainStream, Outpu
 	}
 	
 	@Override
-	public void writeStream(Object stream) throws IOException {
+	public void writeStream(Object stream) {
 		
-		this.objOut.writeObject(stream);
+		try {
+			this.objOut.writeObject(stream);
+		}
+		catch(IOException e) {e.printStackTrace();}
 	}
 	
 	public ObjectOutput(File file) throws IOException {

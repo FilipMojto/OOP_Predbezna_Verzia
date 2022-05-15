@@ -1,7 +1,7 @@
 package custom_interfaces;
 
-import application_interface.FileScanner;
-import application_interface.FileOutput;
+import application_interface.file_management.FileOutput;
+import application_interface.file_management.FileScanner;
 
 @FunctionalInterface
 public interface Serialization {

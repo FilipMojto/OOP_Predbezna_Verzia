@@ -1,4 +1,4 @@
-package application_interface;
+package application_interface.file_management;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,10 +7,9 @@ import java.io.ObjectInputStream;
 
 public class ObjectInput extends FileCompatibility {
 	private FileInputStream fileIn = null;
-	private ObjectInputStream objIn = null;		
+	private ObjectInputStream objIn = null;
 	
 	public Object deserializeObject() throws IOException, ClassNotFoundException {
-		
 		return this.objIn.readObject();
 	}
 	

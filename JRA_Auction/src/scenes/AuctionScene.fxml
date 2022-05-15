@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphical_menu.AuctionSceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="257.0" layoutX="170.0" layoutY="78.0" strokeType="INSIDE" width="260.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1894736886024475" green="0.13192982971668243" blue="0.13192982971668243" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9894737005233765" green="0.8135672807693481" blue="0.8135672807693481" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2160000056028366" green="0.5400000214576721" blue="0.4864386022090912" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="232.0" layoutY="167.0" onMouseClicked="#startNewAuction" stroke="BLACK" strokeType="INSIDE" width="135.0" />
+      <Label layoutX="254.0" layoutY="177.0" onMouseClicked="#startNewAuction" text="Start Auction">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#toMainMenu" prefHeight="26.0" prefWidth="70.0" text="back" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="233.0" layoutY="207.0" onMouseClicked="#startNewAuction" stroke="BLACK" strokeType="INSIDE" width="135.0" />
+      <Label layoutX="262.0" layoutY="217.0" onMouseClicked="#startNewAuction" text="Insert Item">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

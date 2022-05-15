@@ -8,10 +8,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphical_interface.BidderSceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphical_interface.SellerSceneController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="257.0" layoutX="188.0" layoutY="88.0" strokeType="INSIDE" width="260.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="257.0" layoutX="178.0" layoutY="78.0" strokeType="INSIDE" width="260.0">
          <stroke>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -45,13 +44,25 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="253.0" layoutY="126.0" stroke="BLACK" strokeType="INSIDE" width="135.0" />
-      <Label layoutX="262.0" layoutY="134.0" text="MAIN MENU">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="243.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="135.0" />
+      <Label layoutX="252.0" layoutY="124.0" text="MAIN MENU">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="20.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="197.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="63.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="243.0" layoutY="156.0" onMouseClicked="#startAuction" stroke="BLACK" strokeType="INSIDE" width="135.0" />
+      <Label layoutX="265.0" layoutY="166.0" onMouseClicked="#startAuction" text="New Auction">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="243.0" layoutY="196.0" onMouseClicked="#toDatabase" stroke="BLACK" strokeType="INSIDE" width="135.0" />
+      <Label layoutX="250.0" layoutY="206.0" onMouseClicked="#toDatabase" text="Bidder Database">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="187.0" layoutY="298.0" stroke="BLACK" strokeType="INSIDE" width="63.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -69,19 +80,13 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Label fx:id="logOutPanel" layoutX="204.0" layoutY="313.0" onMouseClicked="#logOut" text="Log out" textFill="#ff0f0f">
+      <Label fx:id="logOutPanel" layoutX="194.0" layoutY="303.0" onMouseClicked="#logOut" text="Log out" textFill="#ff0f0f">
          <font>
             <Font name="Bodoni MT Black Italic" size="12.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="253.0" layoutY="245.0" onMouseClicked="#toInfo" stroke="BLACK" strokeType="INSIDE" width="135.0" />
-      <Label layoutX="275.0" layoutY="255.0" text="Personal info">
-         <font>
-            <Font name="Berlin Sans FB" size="17.0" />
-         </font>
-      </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="253.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" width="135.0" />
-      <Label layoutX="280.0" layoutY="176.0" onMouseClicked="#startAuction" text="JoinAuction">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="243.0" layoutY="235.0" onMouseClicked="#toInfo" stroke="BLACK" strokeType="INSIDE" width="135.0" />
+      <Label layoutX="265.0" layoutY="245.0" text="Personal info">
          <font>
             <Font name="Berlin Sans FB" size="17.0" />
          </font>

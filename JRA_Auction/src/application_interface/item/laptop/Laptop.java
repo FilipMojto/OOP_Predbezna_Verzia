@@ -1,6 +1,6 @@
 package application_interface.item.laptop;
 
-import application_interface.Item;
+import application_interface.main_package.Item;
 import other.StringExtension;
 
 public abstract class Laptop extends Item {
@@ -8,6 +8,7 @@ public abstract class Laptop extends Item {
 	private static final long serialVersionUID = 1L;
 	
 	transient private StringExtension str;
+	
 	private String type;
 	
 	@Override
@@ -19,8 +20,8 @@ public abstract class Laptop extends Item {
 	@Override
 	public String getType() {return this.type;}
 	
-	public Laptop(String manufacturer, int price) {
-		super(manufacturer, price);
+	public Laptop(String manufacturer, String name, int price) {
+		super(manufacturer, name, price);
 		
 		this.str = new StringExtension(null);
 		this.type = "L";
